@@ -1,0 +1,897 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+ /* overflow-x: hidden; */
+}
+
+*{
+  overflow: none;
+}
+
+/*------ПОИСК-----*/
+
+* {box-sizing: border-box;}
+form {
+  position: relative;
+  width: 200px;
+  height: 32px;
+  margin: 0 auto;
+  background: #A8DFDC00;
+  border-bottom: 4px solid #487281;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+input, button {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+input {
+  width: 100%;
+  height: 32px;
+  padding-left: 15px;
+}
+button {
+  height: 32px;
+  width: 32px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+button:before {
+  content: "\f054";
+  font-family: FontAwesome;
+  font-size: 15px;
+  color: #487281;
+}
+
+header, footer{
+background: #BADFE1;
+padding: 0% 10%;
+width: 100%;
+box-sizing: border-box;
+/*outline: 1px solid #17252A;*/
+}
+.g, footer{
+  
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.f{
+  display: flex;
+  align-items: center;
+}
+
+header img, footer img{
+width: 140px;
+height: auto;
+/*outline: 1px solid #17252A;*/
+}
+
+header #contact, footer #contact{
+width: 95px;
+/*outline: 1px solid #17252A;*/
+}
+/*header #contact p{
+  float: left;
+  /*margin-left: auto;
+  margin-right: auto;
+  
+}*/
+/*header #contact img{
+  width: 50px;
+  margin: 2.5% 0% 2.5% 6.5%;
+height: auto;
+outline: 1px solid #17252A;
+}*/
+
+.contact:hover{
+  color: #487281;
+font-weight: 600;
+}
+
+a{
+  font-size: 19px;
+  font-family: 'Gabriela', serif;
+  font-weight: 500;
+  text-decoration: none;
+  color: #17252A;
+}
+.c{
+  width: 30px;
+}
+
+/*------------ГЛАВНАЯ-----------*/
+main{
+ width: 100%;
+  float: left;
+  background: #DEF2F1;
+}
+/*div.main{
+
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}*/
+.scroll{
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  background: center / contain no-repeat url(/personal_page/image/client.png);
+  right: 50px;
+  bottom: 20px;
+  border-radius: 30px;
+  display: flex;
+}
+
+.scrollIcon {
+  width: 100%;
+  height: 100%;
+}
+
+
+nav{
+  padding: 0% 10%;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #c6e4e4;
+  line-height: 50px;
+}
+
+.menu {
+  padding: 0% 10%;
+  width: 100%;
+  margin-right: 20px;
+  /*outline: 1px solid #17252A;*/
+  top: 0px;
+  position: sticky;
+}
+.amenu{
+  min-width: 80px;
+  padding: 14px 50px 14px 0px;
+  /*outline: 1px solid #17252A;*/
+}
+
+.amenu:hover{
+  color: #487281;
+  font-weight: 600;
+}
+
+
+
+.amenua{
+  min-width: 80px;
+  padding: 14px 0px 14px 5px;
+  /*outline: 1px solid #2ea052;*/
+}
+
+.amenua:hover{
+  color: #487281;
+  font-weight: 600;
+  }
+
+.q{
+  padding: 0%;
+  display: block;
+  min-height: max-content;
+  /*outline: 1px solid #17252A;*/
+}
+
+
+
+.chapter{
+  margin-left: auto;
+  width: max-content;
+  margin-right: auto;
+  /*outline: 1px solid #17252A;*/
+margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.q img {
+  width: 25px;
+  height: 25px;
+  display: inline;
+  /*outline: 1px solid #17252A;*/
+}
+
+h1{
+  font-family: 'Gabriela', serif;
+  font-size: 22px;
+  width: max-content;
+  display: inline;
+  color: #17252A;
+  /*outline: 1px solid #17252A;*/
+}
+
+.w{
+  display: flex;
+  margin: 0% 135px;
+  /*outline: 1px solid #17252A;*/
+}
+
+.news1 img{
+  width: 200px;
+  height: 140px;
+  margin: 0% 0.65% 2% 0%;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.news2 img{
+  width: 315px;
+  height: 223px;
+  margin: 0% 0.65% 2% 0%;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.zagnews{
+  font-family: 'Gabriela', serif;
+  font-size: 18px;
+  color: #17252A;
+}
+
+.zagnews:hover{
+  letter-spacing: 1.5px;
+  font-weight: 600;
+}
+
+.opisnews{
+  font-family: 'Brygada 1918';
+  font-size: 16px;
+  color: #17252A;
+}
+.news1{
+width: 199px;
+height: max-content;
+background: #A8DFDC;
+margin: 2% 0.65% 2% 1.25%;
+box-shadow: 6px 7px 4px rgba(60, 45, 84, 0.5);
+border-radius: 10px;
+/*outline: 1px solid #12e446;*/
+}
+
+.news1:first-child{
+  margin-left: 0;
+}
+.news1 p, .news1 h2{
+margin-top: -8px;
+margin-left: 10px;
+}
+
+.zagakcii{
+  font-family: 'Gabriela', serif;
+  font-size: 18px;
+  color: #17252A;
+}
+
+.zagakcii:hover{
+  letter-spacing: 1.5px;
+  font-weight: 600;
+}
+
+.opisakcii{
+  font-family: 'Brygada 1918';
+  font-size: 16px;
+  color: #17252A;
+}
+
+.news2{
+  width: 535px;
+  height: 223px;
+  display: flex;
+  background: #A8DFDC;
+  box-shadow: 6px 7px 4px rgba(60, 45, 84, 0.5);
+  margin: 1.25% 4%;
+  border-radius: 10px;
+  justify-content: space-between;
+  /*outline: 1px solid #f3c809;*/
+}
+
+.news2:last-child{
+  margin-left: 0;
+}
+.news3{
+  width: 550px;
+  height: 223px;
+  background: #A8DFDC;
+  box-shadow: 6px 7px 4px rgba(60, 45, 84, 0.5);
+  margin: 1.25% 3% 1.25% 1.5%;
+  border-radius: 10px;
+  /*outline: 1px solid #17252A;*/
+}
+
+/*.question{
+width: 829px;
+height: 95px;
+margin-left: auto;
+margin-top: 2%;
+margin-bottom: 3%;
+background: #A8DFDC;
+box-shadow: 6px 7px 4px rgba(60, 45, 84, 0.5);
+border-radius: 20px 20px 0px 20px;
+outline: 1px solid #17252A;
+}*/
+
+/*.client{
+  padding: 0% 10%;
+  outline: 1px solid #17252A;
+}*/
+
+/*.client img{
+  width: 50px;
+  height: 50px;
+  outline: 1px solid #17252A;
+}*/
+
+
+
+h2{
+  font-family: 'Brygada 1918';
+  font-size: 18px;
+  line-height: 10px;
+  color: #17252A;
+}
+/*---------------------------------------
+------------------------------
+------------------------------*/
+
+.qe{
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+/*outline: 1px solid #17252A;*/
+}
+
+
+.chaptere{
+  display: flex;
+  align-items:baseline;
+ 
+}
+
+.point{
+  width: 30px;
+  height: 30px;
+}
+
+.questione{
+  width: max-content;
+  display: flex;
+  margin: 20px 135px 5px auto;
+ /*float: right;*/
+  /*outline: 1px solid #17252A;*/
+}
+/*.answer{
+width: 829px;
+height: 95px;
+margin-right: auto;
+margin-bottom: 3%;
+background: #A8DFDC;
+box-shadow: -6px 7px 4px rgba(60, 45, 84, 0.47);
+border-radius: 20px 20px 20px 0px;
+outline: 1px solid #17252A;
+}*/
+.answere{
+  width: 100%;
+  display: flex;
+  padding: 0% 10%;
+  /* float: left;  */
+  margin-top: 20px;
+  margin-bottom: 5px;
+  /*outline: 1px solid #17252A;*/
+  
+}
+.textq{
+  font-family: 'Brygada 1918';
+  text-align: justify;
+  font-size: 16px;
+  width: max-content;
+  display: inline;
+  color: #17252A;
+  max-width: 800px;
+  width:fit-content;
+  min-width: 400px;
+  margin-right: 10px;
+  padding-right: 2%;
+background: #A8DFDC;
+box-shadow: 6px 7px 4px rgba(60, 45, 84, 0.5);
+border-radius: 20px 0px 20px 20px;
+}
+
+.qqq{
+  width: 60px;
+  height: 55px;
+}
+.texta{
+  font-family: 'Brygada 1918';
+  font-size: 16px;
+  text-align: justify;
+  width: max-content;
+  display: inline;
+  color: #17252A;
+  background: #A8DFDC;
+  box-shadow: -6px 7px 4px rgba(60, 45, 84, 0.47);
+  border-radius: 0px 20px 20px 20px;
+  margin-left: 15px;
+  padding-right: 2%;
+    max-width: 800px;
+    width:fit-content;
+    min-width: 400px;
+  }
+  
+  .texto{
+    font-family: 'Brygada 1918';
+    font-size: 16px;
+    text-align: justify;
+    display: inline;
+    color: #17252A;
+    background: #A8DFDC;
+    box-shadow: -6px 7px 4px rgba(60, 45, 84, 0.47);
+    border-radius: 0px 20px 20px 20px;
+    margin-left: 15px;
+    padding-right: 2%;
+    width:800px;
+    height: max-content;
+    }
+
+.aaa{
+  width: 55px;
+  height: 60px;
+}
+.textq p, .textq h2, .texta p, .texta h2, .texto p, .texto h2, .description p, .description h2{
+  margin-left: 3%;
+}
+
+.forma{
+  font-family: 'Brygada 1918';
+  font-size: 16px;
+  color: #17252A;
+  background: #3AAFA9;
+  box-shadow: 6px 7px 4px rgba(60, 45, 84, 0.5);
+  border-radius: 20px 20px 20px 20px;
+  text-align: center;
+  width: 150px;
+  padding: 1.5px 2.5px; 
+  margin: 20px 10% 0 auto;
+  /*outline: 2px solid #ff8800;*/
+}
+
+.ooo img{
+  width: 60px;
+  height: 55px;
+}
+.clinika img{
+  width: 300px;
+  height: 223px;
+  margin: 0% 0.65% 2% 0%;
+  border-radius: 10px;
+}
+
+.clinika{
+  width: 300px;
+  height: 223px;
+  background: #A8DFDC;
+  box-shadow: 6px 7px 4px rgba(60, 45, 84, 0.5);
+  margin: 2% 0.65% 2% 1.25%;
+  border-radius: 10px;
+  }
+
+  .description{
+    width: 900px;
+    font-family: 'Brygada 1918';
+    text-align: justify;
+    font-size: 16px;
+    display: inline;
+    color: #17252A; 
+    margin: 21px 70px 22px 10px;
+    padding-right: 2%;
+  background: #A8DFDC;
+  box-shadow: 6px 7px 4px rgba(60, 45, 84, 0.5);
+  border-radius: 20px 20px 20px 20px;
+  }
+/*------------УСЛУГИ И СПЕЦИАЛИСТЫ-----------*/
+
+.uslugi{
+  margin: 0.5% 10%;
+  /*outline: 1px solid #ff8800;*/
+}
+
+/*.filtrs{
+  width: 160px;
+  height: 300px;
+  background: #487281;
+  box-shadow: 6px 7px 4px rgba(60, 45, 84, 0.5);
+  border-radius: 10px;
+  margin: 1% 0%;
+  /*outline: 1px solid #17252A;
+}*/
+
+/*.box{
+  width: max-content;
+  padding-left: -50px;
+  /*outline: 1px solid #00ff2a;
+}*/
+
+.blokuslugi{
+  width: 100%;
+  display: flex;
+  margin-bottom: 17px;
+  justify-content:flex-start;
+  column-gap: 18px;
+  row-gap: 10px;
+  flex-wrap: wrap;
+  /*outline: 1px solid #17252A;*/
+}
+
+.fotki img{
+  width: 200px;
+  height: 300px;
+  background: #A8DFDC;
+  box-shadow: 6px 7px 4px rgba(60, 45, 84, 0.5);
+  border-radius: 10px;
+  /*outline: 1px solid #ff008c;*/
+}
+
+.specialists{
+  display: flex;
+  width: max-content;
+  margin-left: 300px;
+  margin-bottom: 10px;
+  padding-left: -50px;
+  outline: 1px solid #17252A;
+}
+
+.doctor{
+  width: 150px;
+  height: 200px;
+  background: #A8DFDC;
+  box-shadow: 6px 7px 4px rgba(60, 45, 84, 0.5);
+  margin: 1.25% 1% 1% ;
+  border-radius: 10px;
+  outline: 1px solid #2f00ff;
+}
+
+.shadow-1{
+  box-shadow: 6px 7px 4px rgba(60, 45, 84, 0.5);
+}
+.black{
+  background: #2e3131f3;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.black:target{
+  display: block;
+  z-index: 10;
+}
+
+.close{
+  display: block;
+}
+
+.close::after{
+  position: fixed;
+  display: flex;
+  height: 2rem;
+  width: 2rem;
+  top: 57.75px;
+  right: 129.75px;
+  align-items: center;
+  justify-content: center;
+  color: #487281;
+  content: "x";
+  font-size: 50px;
+  cursor: pointer;
+  font-weight: 700;
+  font-family: 'Nunito';
+}
+
+.modal{
+  position: fixed;
+  display: flex;
+  left: 10%;
+  top:10%;
+  width: 80%;
+  height: 75%;
+  padding-top: 25px;
+  align-items:flex-start;
+  justify-content: center;
+  background-color: #DEF2F1;
+}
+.left{
+  display: block;
+  /*outline: 1px dotted rosybrown;*/
+}
+.Center{
+  margin: 20px auto 0;
+  padding: 1.5px 15px;
+  width: max-content;
+}
+.portret{
+  width: 250px;
+  box-shadow: 6px 7px 4px rgba(60, 45, 84, 0.5);
+  
+}
+
+.specstag{
+  font-family: 'Brygada 1918';
+  font-size: 18px;
+  color: #17252A;
+}
+
+.odoctor{
+  flex: 0 0 55%;
+  height: 374px;
+  padding: 20px;
+  background: #A8DFDC;
+  box-shadow: 6px 7px 4px rgba(60, 45, 84, 0.5);
+  border-radius: 10px;
+  margin-left: 75px;
+  
+}
+.title{
+  width: max-content;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  font-family: 'Gabriela', serif;
+  font-size: 24px;
+}
+.onem{
+  margin: 0;
+  font-family: 'Comfortaa';
+  line-height: 1.5;
+  text-align: justify;
+  text-indent: 25px;
+}
+.R{
+  width: max-content;
+  margin: 0 0 0 auto;
+}
+.border{
+  padding: 10px 20px;  
+  background: #3aafa96e;
+  box-shadow: 6px 7px 7px rgba(60, 45, 84, 0.5);
+  border-radius: 0px 10px 10px 10px;
+}
+/*.carousel-inner, .d-block col-4{
+  width: 150px;
+  height: 200px;
+  box-shadow: 6px 7px 4px rgba(60, 45, 84, 0.5);
+  margin: 1.25% 23% 1% ;
+  border-radius: 10px;
+  display:inline-flex;
+}
+
+.carousel{
+  color: #17252A;
+}
+*/
+
+/*--------------УСЛУГИ----------------*/
+.boxService{
+  display: flex;
+}
+
+.serviceF img{
+  width: 200px;
+  height: 300px;
+  margin: 00px 0px 20px 137px;
+  background: #A8DFDC;
+  box-shadow: 6px 7px 4px rgba(60, 45, 84, 0.5);
+  border-radius: 10px;
+}
+
+.serviceF{
+  display: block;
+}
+
+.right{
+  width: max-content;
+  padding: 1.5px 8px;
+  margin-top: 15px;
+  margin-right: 0;
+}
+
+.serviceO{
+  width: max-content;
+  background: #a8dfdc71;
+  box-shadow: 6px 7px 4px rgba(60, 45, 84, 0.5);
+  border-radius: 10px;
+  margin-right: 135px;
+  margin-left: 50px;
+}
+.serviceOt{
+  text-align: justify;
+  /*margin-left: 50px;
+  margin-right: 150px;*/
+  padding: 15px 20px;
+  font-family: 'Brygada 1918';
+  font-size: 18px;
+  text-indent: 20px;
+ /* background: #a8dfdc71;
+  box-shadow: 6px 7px 4px rgba(60, 45, 84, 0.5);
+  border-radius: 10px;*/
+  color: #17252A;
+}
+
+.blocF{
+  display: flex;
+  /*outline: 1px solid #2f00ff;*/
+}
+
+.blocF img{
+  width: 150px;
+  height: auto;
+  margin: 9px auto 0;
+  display: flex;
+  border-radius: 10px 10px 0 0;
+}
+
+.vr{
+width: 170px;
+height: max-content;
+margin: 0px 50px;
+/*background: #a8dfdc71;
+box-shadow: 6px 7px 4px rgba(60, 45, 84, 0.5);
+border-radius: 10px;
+/*outline: 1px solid #2f00ff;*/
+}
+
+.vr:first-child{
+margin-right: 0;
+margin-left: 10px;
+}
+
+.Namevr{
+  margin-top: 0px;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.boxProcedure{
+margin: 20px 0;
+/*outline: 1px solid;*/
+}
+
+.procedure{
+  display: flex;
+  border-bottom: 2px dotted rgba(60, 45, 84, 0.5);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  justify-content: space-between;
+  text-align: justify;
+  margin-left: 135px;
+  margin-right: 135px;
+  padding: 15px 20px;
+  font-family: 'Brygada 1918';
+  font-size: 20px;
+  text-indent: 20px;
+  color: #17252A;
+}
+
+.procedure:first-child{
+  border-top: 2px dotted rgba(60, 45, 84, 0.5);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+/*---------------ЗАПИСЬ-------------------*/
+.modal2{
+  height: 75%;
+  width: 50%;
+  left: 25%;
+  top: 12.5%;
+  display: block;
+}
+
+.close2::after{
+  top: 74.75px;
+  right: 331.75px;
+}
+
+.vvod{
+  margin: 0 30px;
+  /*outline: 1px solid;*/
+}
+
+.vvodT{
+  height: 30px;
+  margin-bottom: 20px;
+  font-family: 'Brygada 1918';
+  font-size: 22px;
+  color: #17252A;
+  background: #A8DFDC00;
+  border-bottom: 4px solid #487281;
+  border-radius: 10px;
+}
+/*--------------КНОПКА------------------*/
+
+.otklik{
+  width: 50px;
+  height: 75%;
+  position: fixed;
+  top: 500px;
+  left: 25%;
+}
+
+.text,
+input[type="checkbox"] {
+  display: none;
+  position: fixed;
+  font-family: 'Gabriela', serif;
+  font-size: 26px;
+  top: 520px;
+  left: 530px;
+  color: #17252A;
+}
+
+input[type="checkbox"]:checked ~ .text {
+  display: block;
+}
+
+/* Стилизация псевдокнопки */
+.btn {
+  font-family: 'Brygada 1918';
+  font-size: 20px;
+  color: #17252A;
+  background: #3AAFA9;
+  box-shadow: 6px 7px 4px rgba(60, 45, 84, 0.5);
+  border-radius: 20px 20px 20px 20px;
+  text-align: center;
+  position: fixed;
+  top: 444px;
+  left: 560px;
+  line-height: 35px;
+  width: 230px;
+  height: 40px;
+  padding: 1.5px 2.5px; 
+  margin: 20px 10% 0 auto;
+}
+/*----------------КОНТАКТЫ-------------------*/
+.kubik1{
+  width: 300px;
+  height: max-content;
+  background: #a8dfdc94;
+  box-shadow: 6px 7px 4px rgba(60, 45, 84, 0.5);
+  margin: 1.25% 1.5% 8% 15%;
+  border-radius: 10px;
+  padding: 0.02% 30px 0.9% 2% ;
+  /*outline: 1px solid #17252A;*/
+} 
+
+.grafik{
+  font-family: 'Brygada 1918';
+  font-size: 18px;
+  line-height: 1.25;
+  /*outline: 1px solid #17252A;*/
+}
+
+.carta{
+  display: flex;
+  margin: 1% 10%;
+}
+
+.samacarta{
+  margin-left: 150px;
+  margin-right: 20%;
+  height: 400px;
+  border: none;
+  box-shadow: 6px 7px 4px rgba(60, 45, 84, 0.5);
+}
+
+.empty {
+  min-height: 51px;
+}
+
+.t{
+  margin-top: 40px;
+  color: #DEF2F1;
+}
